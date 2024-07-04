@@ -240,7 +240,7 @@ def main(page: ft.Page):
 
     bouton_selection = ft.ElevatedButton(
         "Choisir un fichier audio",
-        on_click=lambda _: file_picker.pick_files(allowed_extensions=["mp3", "wav", "ogg"])
+        on_click=lambda _: file_picker.pick_files(allowed_extensions=["mp3", "wav", "flac", "ogg"])
     )
 
     page.add(ft.Container(bouton_selection, alignment=ft.alignment.center, expand=True))
